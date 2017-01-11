@@ -11,7 +11,7 @@ classdef TSStation < handle
         function obj = TSStation(number, instrumentHeight)
             obj.Number = number;
             obj.InstrumentHeight = instrumentHeight;
-            if (obj.Number > 9999 && obj.Number <= 109999)
+            if (obj.Number > 999)
             	obj.GivenByKOR = true;
             end
   
